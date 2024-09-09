@@ -209,7 +209,7 @@ const Weather = () => {
           ) : (
             <p className='flex items-center justify-center gap-2'>
               <img
-                src='loader.svg'
+                src='./loader.svg'
                 alt='loading'
                 className='opacity-50 max-w-6 pt-1'
               />
