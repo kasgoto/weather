@@ -22,7 +22,7 @@ const WeatherToday = (props) => {
           <div className='grid items-center gap-x-1 grid-flow-col mt-1'>
             <img
               src={
-                "https://cors-anywhere.herokuapp.com/http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                 props.weatherIcon +
                 "@2x.png"
               }
@@ -44,7 +44,7 @@ const WeatherToday = (props) => {
         <img
           className='mx-auto w-48 drop-shadow-xl brightness-125'
           src={
-            "https://cors-anywhere.herokuapp.com/http://openweathermap.org/img/wn/" + props.weatherIcon + "@4x.png"
+            "https://openweathermap.org/img/wn/" + props.weatherIcon + "@4x.png"
           }
           alt='🌧️'
         />
