@@ -11,4 +11,5 @@ Technologies used: react/tailwind/axios
 
 Demo view: https://kasgoto.github.io/weather/
 
-![image](https://github.com/user-attachments/assets/f3870684-8b0d-41b9-8353-774950034c85)
+![image](https://github.com/user-attachments/assets/ca2eef81-96ff-4c6d-8d5f-db0e4a59fd1d)
+
