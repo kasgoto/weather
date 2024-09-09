@@ -53,10 +53,10 @@ const Weather = () => {
           if (loadedGeolocation) return
           setLoadedGeolocation(true)
           const response = await axios.get(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${userLocation.latitude}&lon=${userLocation.longitude}&units=metric&appid=28fe031716e55a064151397a02026387`
+            `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${userLocation.latitude}&lon=${userLocation.longitude}&units=metric&appid=28fe031716e55a064151397a02026387`
           )
           const responseForecast = await axios.get(
-            `https://api.openweathermap.org/data/2.5/forecast?lat=${userLocation.latitude}&lon=${userLocation.longitude}&units=metric&appid=28fe031716e55a064151397a02026387`
+            `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?lat=${userLocation.latitude}&lon=${userLocation.longitude}&units=metric&appid=28fe031716e55a064151397a02026387`
           )
           setWeatherData(response.data)
           setWeatherForecast(responseForecast.data)
@@ -65,10 +65,10 @@ const Weather = () => {
         }
       } else {
         const response = await axios.get(
-          `https://api.openweathermap.org/data/2.5/weather?q=${userCity}&units=metric&appid=28fe031716e55a064151397a02026387`
+          `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${userCity}&units=metric&appid=28fe031716e55a064151397a02026387`
         )
         const responseForecast = await axios.get(
-          `https://api.openweathermap.org/data/2.5/forecast?q=${userCity}&units=metric&appid=28fe031716e55a064151397a02026387`
+          `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=${userCity}&units=metric&appid=28fe031716e55a064151397a02026387`
         )
         setWeatherForecast(responseForecast.data)
         setWeatherData(response.data)
@@ -209,7 +209,7 @@ const Weather = () => {
           ) : (
             <p className='flex items-center justify-center gap-2'>
               <img
-                src='src/assets/loader.svg'
+                src='../../src/assets/loader.svg'
                 alt='loading'
                 className='opacity-50 max-w-6 pt-1'
               />

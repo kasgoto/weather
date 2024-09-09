@@ -14,7 +14,9 @@ const WeatherForecast = (props) => {
       <img
         className='sm:w-11 sm:h-11 w-9 h-9 drop-shadow-md brightness-125 '
         src={
-          "http://openweathermap.org/img/wn/" + props.weatherIcon + "@2x.png"
+          "https://cors-anywhere.herokuapp.com/http://openweathermap.org/img/wn/" +
+          props.weatherIcon +
+          "@2x.png"
         }
         alt='🌧️'
       />
